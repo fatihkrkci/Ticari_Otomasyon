@@ -75,6 +75,7 @@
             // 
             this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
             this.BtnTemizle.Location = new System.Drawing.Point(79, 539);
             this.BtnTemizle.Margin = new System.Windows.Forms.Padding(5);
@@ -141,7 +142,7 @@
             this.TxtDogalgaz.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtDogalgaz.Properties.Appearance.Options.UseFont = true;
             this.TxtDogalgaz.Size = new System.Drawing.Size(145, 28);
-            this.TxtDogalgaz.TabIndex = 31;
+            this.TxtDogalgaz.TabIndex = 6;
             // 
             // TxtSu
             // 
@@ -150,7 +151,7 @@
             this.TxtSu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSu.Properties.Appearance.Options.UseFont = true;
             this.TxtSu.Size = new System.Drawing.Size(145, 28);
-            this.TxtSu.TabIndex = 30;
+            this.TxtSu.TabIndex = 5;
             // 
             // CmbYil
             // 
@@ -165,7 +166,7 @@
             "2024",
             "2025"});
             this.CmbYil.Size = new System.Drawing.Size(145, 28);
-            this.CmbYil.TabIndex = 29;
+            this.CmbYil.TabIndex = 3;
             // 
             // TxtMaas
             // 
@@ -174,7 +175,7 @@
             this.TxtMaas.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtMaas.Properties.Appearance.Options.UseFont = true;
             this.TxtMaas.Size = new System.Drawing.Size(145, 28);
-            this.TxtMaas.TabIndex = 27;
+            this.TxtMaas.TabIndex = 8;
             // 
             // labelControl5
             // 
@@ -225,7 +226,7 @@
             "Kasım",
             "Aralık"});
             this.CmbAy.Size = new System.Drawing.Size(145, 28);
-            this.CmbAy.TabIndex = 7;
+            this.CmbAy.TabIndex = 2;
             // 
             // labelControl11
             // 
@@ -300,7 +301,7 @@
             this.TxtInternet.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtInternet.Properties.Appearance.Options.UseFont = true;
             this.TxtInternet.Size = new System.Drawing.Size(145, 28);
-            this.TxtInternet.TabIndex = 6;
+            this.TxtInternet.TabIndex = 7;
             // 
             // labelControl7
             // 
@@ -349,7 +350,7 @@
             this.TxtElektrik.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtElektrik.Properties.Appearance.Options.UseFont = true;
             this.TxtElektrik.Size = new System.Drawing.Size(145, 28);
-            this.TxtElektrik.TabIndex = 2;
+            this.TxtElektrik.TabIndex = 4;
             // 
             // labelControl2
             // 
@@ -382,8 +383,10 @@
             // 
             // FrmGiderler
             // 
+            this.AcceptButton = this.BtnKaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.BtnTemizle;
             this.ClientSize = new System.Drawing.Size(2054, 1055);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.groupControl1);

@@ -83,7 +83,7 @@
             this.CmbIlce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.CmbIlce.Size = new System.Drawing.Size(281, 28);
-            this.CmbIlce.TabIndex = 10;
+            this.CmbIlce.TabIndex = 4;
             // 
             // CmbIl
             // 
@@ -94,7 +94,7 @@
             this.CmbIl.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.CmbIl.Size = new System.Drawing.Size(281, 28);
-            this.CmbIl.TabIndex = 9;
+            this.CmbIl.TabIndex = 3;
             this.CmbIl.SelectedIndexChanged += new System.EventHandler(this.CmbIl_SelectedIndexChanged);
             // 
             // MskTelefon
@@ -104,7 +104,7 @@
             this.MskTelefon.Mask = "(999) 000-0000";
             this.MskTelefon.Name = "MskTelefon";
             this.MskTelefon.Size = new System.Drawing.Size(281, 29);
-            this.MskTelefon.TabIndex = 8;
+            this.MskTelefon.TabIndex = 9;
             // 
             // BtnSil
             // 
@@ -114,7 +114,7 @@
             this.BtnSil.Location = new System.Drawing.Point(55, 556);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(372, 43);
-            this.BtnSil.TabIndex = 13;
+            this.BtnSil.TabIndex = 14;
             this.BtnSil.Text = "SİL";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
@@ -126,7 +126,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(55, 612);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(372, 43);
-            this.BtnGuncelle.TabIndex = 14;
+            this.BtnGuncelle.TabIndex = 15;
             this.BtnGuncelle.Text = "GÜNCELLE";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -138,7 +138,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(55, 500);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(372, 43);
-            this.BtnKaydet.TabIndex = 12;
+            this.BtnKaydet.TabIndex = 13;
             this.BtnKaydet.Text = "KAYDET";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
@@ -198,7 +198,7 @@
             this.TxtSube.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSube.Properties.Appearance.Options.UseFont = true;
             this.TxtSube.Size = new System.Drawing.Size(281, 28);
-            this.TxtSube.TabIndex = 3;
+            this.TxtSube.TabIndex = 5;
             // 
             // labelControl3
             // 
@@ -312,7 +312,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.LkpFirma.Properties.NullText = "Lütfen bir firma seçiniz";
             this.LkpFirma.Size = new System.Drawing.Size(281, 28);
-            this.LkpFirma.TabIndex = 40;
+            this.LkpFirma.TabIndex = 12;
             // 
             // BtnTemizle
             // 
@@ -323,7 +323,7 @@
             this.BtnTemizle.Margin = new System.Windows.Forms.Padding(5);
             this.BtnTemizle.Name = "BtnTemizle";
             this.BtnTemizle.Size = new System.Drawing.Size(372, 43);
-            this.BtnTemizle.TabIndex = 39;
+            this.BtnTemizle.TabIndex = 16;
             this.BtnTemizle.Text = "TEMİZLE";
             this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
@@ -334,7 +334,7 @@
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
             this.MskTarih.Size = new System.Drawing.Size(281, 29);
-            this.MskTarih.TabIndex = 38;
+            this.MskTarih.TabIndex = 10;
             this.MskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl13
@@ -354,7 +354,7 @@
             this.TxtHesapTur.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtHesapTur.Properties.Appearance.Options.UseFont = true;
             this.TxtHesapTur.Size = new System.Drawing.Size(281, 28);
-            this.TxtHesapTur.TabIndex = 33;
+            this.TxtHesapTur.TabIndex = 11;
             // 
             // labelControl10
             // 
@@ -383,7 +383,7 @@
             this.TxtYetkili.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtYetkili.Properties.Appearance.Options.UseFont = true;
             this.TxtYetkili.Size = new System.Drawing.Size(281, 28);
-            this.TxtYetkili.TabIndex = 29;
+            this.TxtYetkili.TabIndex = 8;
             // 
             // labelControl12
             // 
@@ -401,7 +401,7 @@
             this.MskHesapNo.Location = new System.Drawing.Point(146, 254);
             this.MskHesapNo.Name = "MskHesapNo";
             this.MskHesapNo.Size = new System.Drawing.Size(281, 29);
-            this.MskHesapNo.TabIndex = 27;
+            this.MskHesapNo.TabIndex = 7;
             this.MskHesapNo.ValidatingType = typeof(int);
             // 
             // labelControl5
@@ -416,6 +416,7 @@
             // 
             // FrmBankalar
             // 
+            this.AcceptButton = this.BtnKaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
