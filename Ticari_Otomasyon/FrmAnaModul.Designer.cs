@@ -48,6 +48,8 @@
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.BtnHareketler = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnRaporlar = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -70,9 +72,11 @@
             this.BtnBankalar,
             this.BtnRehber,
             this.BtnFaturalar,
-            this.BtnAyarlar});
+            this.BtnAyarlar,
+            this.BtnHareketler,
+            this.BtnRaporlar});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 15;
+            this.ribbonControl1.MaxItemId = 17;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -231,6 +235,8 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnBankalar);
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnRehber);
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnFaturalar);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnHareketler);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnRaporlar);
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnAyarlar);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
@@ -238,6 +244,25 @@
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // BtnHareketler
+            // 
+            this.BtnHareketler.Caption = "HAREKETLER";
+            this.BtnHareketler.Id = 15;
+            this.BtnHareketler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.BtnHareketler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnHareketler.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnHareketler.Name = "BtnHareketler";
+            this.BtnHareketler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnHareketler_ItemClick);
+            // 
+            // BtnRaporlar
+            // 
+            this.BtnRaporlar.Caption = "RAPORLAR";
+            this.BtnRaporlar.Id = 16;
+            this.BtnRaporlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.BtnRaporlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnRaporlar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnRaporlar.Name = "BtnRaporlar";
             // 
             // FrmAnaModul
             // 
@@ -277,6 +302,8 @@
         private DevExpress.XtraBars.BarButtonItem BtnFaturalar;
         private DevExpress.XtraBars.BarButtonItem BtnAyarlar;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.BarButtonItem BtnHareketler;
+        private DevExpress.XtraBars.BarButtonItem BtnRaporlar;
     }
 }
 

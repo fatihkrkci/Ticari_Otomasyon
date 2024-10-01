@@ -52,7 +52,6 @@
             this.MskTelefon2 = new System.Windows.Forms.MaskedTextBox();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.MskYetkiliTC = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.TxtYetkiliGorev = new DevExpress.XtraEditors.TextEdit();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
@@ -88,6 +87,7 @@
             this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
             this.TxtKod1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
+            this.MskYetkiliTC = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.TxtVergiDairesi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -100,7 +100,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MskYetkiliTC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtYetkiliGorev.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtYetkili.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
@@ -390,16 +389,6 @@
             this.groupControl3.TabIndex = 8;
             this.groupControl3.Text = "groupControl3";
             // 
-            // MskYetkiliTC
-            // 
-            this.MskYetkiliTC.Location = new System.Drawing.Point(110, 90);
-            this.MskYetkiliTC.Margin = new System.Windows.Forms.Padding(5);
-            this.MskYetkiliTC.Name = "MskYetkiliTC";
-            this.MskYetkiliTC.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskYetkiliTC.Properties.Appearance.Options.UseFont = true;
-            this.MskYetkiliTC.Size = new System.Drawing.Size(346, 28);
-            this.MskYetkiliTC.TabIndex = 6;
-            // 
             // labelControl14
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -515,7 +504,7 @@
             this.xtraTabPage2.Controls.Add(this.groupControl5);
             this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(476, 728);
+            this.xtraTabPage2.Size = new System.Drawing.Size(476, 712);
             this.xtraTabPage2.Text = "Adres Bilgileri";
             // 
             // groupControl5
@@ -627,7 +616,7 @@
             this.xtraTabPage3.Controls.Add(this.groupControl6);
             this.xtraTabPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage3.ImageOptions.Image")));
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(476, 728);
+            this.xtraTabPage3.Size = new System.Drawing.Size(476, 712);
             this.xtraTabPage3.Text = "Özel Kodlar";
             // 
             // groupControl7
@@ -775,6 +764,17 @@
             this.labelControl26.TabIndex = 18;
             this.labelControl26.Text = "Kod 1:";
             // 
+            // MskYetkiliTC
+            // 
+            this.MskYetkiliTC.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MskYetkiliTC.Location = new System.Drawing.Point(109, 90);
+            this.MskYetkiliTC.Margin = new System.Windows.Forms.Padding(5);
+            this.MskYetkiliTC.Mask = "00000000000";
+            this.MskYetkiliTC.Name = "MskYetkiliTC";
+            this.MskYetkiliTC.Size = new System.Drawing.Size(346, 29);
+            this.MskYetkiliTC.TabIndex = 12;
+            this.MskYetkiliTC.ValidatingType = typeof(int);
+            // 
             // FrmFirmalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -799,7 +799,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MskYetkiliTC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtYetkiliGorev.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtYetkili.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
@@ -851,7 +850,6 @@
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraEditors.GroupControl groupControl3;
-        private DevExpress.XtraEditors.TextEdit MskYetkiliTC;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.TextEdit TxtYetkiliGorev;
         private DevExpress.XtraEditors.LabelControl labelControl15;
@@ -892,5 +890,6 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage5;
         private System.Windows.Forms.RichTextBox RchKod2;
         private DevExpress.XtraEditors.SimpleButton BtnTemizle;
+        private System.Windows.Forms.MaskedTextBox MskYetkiliTC;
     }
 }
