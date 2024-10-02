@@ -45,11 +45,11 @@
             this.BtnRehber = new DevExpress.XtraBars.BarButtonItem();
             this.BtnFaturalar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnAyarlar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnHareketler = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnRaporlar = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.BtnHareketler = new DevExpress.XtraBars.BarButtonItem();
-            this.BtnRaporlar = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -100,6 +100,7 @@
             this.BtnStoklar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnStoklar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnStoklar.Name = "BtnStoklar";
+            this.BtnStoklar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnStoklar_ItemClick);
             // 
             // BtnMusteriler
             // 
@@ -214,6 +215,25 @@
             this.BtnAyarlar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnAyarlar.Name = "BtnAyarlar";
             // 
+            // BtnHareketler
+            // 
+            this.BtnHareketler.Caption = "HAREKETLER";
+            this.BtnHareketler.Id = 15;
+            this.BtnHareketler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnHareketler.ImageOptions.LargeImage")));
+            this.BtnHareketler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnHareketler.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnHareketler.Name = "BtnHareketler";
+            this.BtnHareketler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnHareketler_ItemClick);
+            // 
+            // BtnRaporlar
+            // 
+            this.BtnRaporlar.Caption = "RAPORLAR";
+            this.BtnRaporlar.Id = 16;
+            this.BtnRaporlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnRaporlar.ImageOptions.LargeImage")));
+            this.BtnRaporlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnRaporlar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnRaporlar.Name = "BtnRaporlar";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -244,25 +264,6 @@
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // BtnHareketler
-            // 
-            this.BtnHareketler.Caption = "HAREKETLER";
-            this.BtnHareketler.Id = 15;
-            this.BtnHareketler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.BtnHareketler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnHareketler.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnHareketler.Name = "BtnHareketler";
-            this.BtnHareketler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnHareketler_ItemClick);
-            // 
-            // BtnRaporlar
-            // 
-            this.BtnRaporlar.Caption = "RAPORLAR";
-            this.BtnRaporlar.Id = 16;
-            this.BtnRaporlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.BtnRaporlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnRaporlar.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnRaporlar.Name = "BtnRaporlar";
             // 
             // FrmAnaModul
             // 
