@@ -37,18 +37,18 @@
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
+            this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
@@ -72,6 +72,7 @@
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowGroupPanel = false;
+            this.gridView2.DoubleClick += new System.EventHandler(this.gridView2_DoubleClick);
             // 
             // xtraTabControl1
             // 
@@ -91,13 +92,6 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(1326, 728);
             this.xtraTabPage1.Text = "ÜRÜN - MİKTAR";
             // 
-            // xtraTabPage2
-            // 
-            this.xtraTabPage2.Controls.Add(this.chartControl2);
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1326, 728);
-            this.xtraTabPage2.Text = "FİRMA - ŞEHİR";
-            // 
             // chartControl1
             // 
             this.chartControl1.Location = new System.Drawing.Point(3, 3);
@@ -110,6 +104,13 @@
         series1};
             this.chartControl1.Size = new System.Drawing.Size(1328, 722);
             this.chartControl1.TabIndex = 12;
+            // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Controls.Add(this.chartControl2);
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(1326, 728);
+            this.xtraTabPage2.Text = "FİRMA - ŞEHİR";
             // 
             // chartControl2
             // 
@@ -143,10 +144,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
-            this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();

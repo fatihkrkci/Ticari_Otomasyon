@@ -164,9 +164,25 @@ namespace Ticari_Otomasyon
 
         public string kullanici;
 
+        FrmAnaSayfa fr14;
+        private void BtnAnaSayfa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr14 == null)
+            {
+                fr14 = new FrmAnaSayfa();
+                fr14.MdiParent = this;
+                fr14.Show();
+            }
+        }
+
         private void FrmAnaModul_Load(object sender, EventArgs e)
         {
-
+            if (fr14 == null)
+            {
+                fr14 = new FrmAnaSayfa();
+                fr14.MdiParent = this;
+                fr14.Show();
+            }
         }
     }
 }
