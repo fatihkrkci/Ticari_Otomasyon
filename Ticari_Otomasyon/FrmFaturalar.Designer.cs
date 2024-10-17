@@ -54,6 +54,9 @@
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.TxtTeslimAlan = new DevExpress.XtraEditors.TextEdit();
             this.TxtTeslimEden = new DevExpress.XtraEditors.TextEdit();
             this.TxtAlici = new DevExpress.XtraEditors.TextEdit();
@@ -69,9 +72,13 @@
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnBul = new DevExpress.XtraEditors.SimpleButton();
+            this.TxtPersonel = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtFirma = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSiraNo.Properties)).BeginInit();
@@ -99,10 +106,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtVergiDairesi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPersonel.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFirma.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl2
             // 
+            this.groupControl2.Controls.Add(this.labelControl10);
+            this.groupControl2.Controls.Add(this.comboBox1);
             this.groupControl2.Controls.Add(this.TxtSiraNo);
             this.groupControl2.Controls.Add(this.labelControl13);
             this.groupControl2.Controls.Add(this.TxtSeri);
@@ -112,7 +123,7 @@
             this.groupControl2.Location = new System.Drawing.Point(1, 1);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.ShowCaption = false;
-            this.groupControl2.Size = new System.Drawing.Size(476, 139);
+            this.groupControl2.Size = new System.Drawing.Size(476, 172);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "groupControl2";
             // 
@@ -189,6 +200,11 @@
             // 
             // groupControl5
             // 
+            this.groupControl5.Controls.Add(this.TxtFirma);
+            this.groupControl5.Controls.Add(this.labelControl9);
+            this.groupControl5.Controls.Add(this.TxtPersonel);
+            this.groupControl5.Controls.Add(this.labelControl8);
+            this.groupControl5.Controls.Add(this.BtnBul);
             this.groupControl5.Controls.Add(this.TxtFaturaID);
             this.groupControl5.Controls.Add(this.labelControl7);
             this.groupControl5.Controls.Add(this.TxtTutar);
@@ -211,7 +227,7 @@
             // 
             // TxtFaturaID
             // 
-            this.TxtFaturaID.Location = new System.Drawing.Point(129, 225);
+            this.TxtFaturaID.Location = new System.Drawing.Point(129, 303);
             this.TxtFaturaID.Margin = new System.Windows.Forms.Padding(5);
             this.TxtFaturaID.Name = "TxtFaturaID";
             this.TxtFaturaID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -223,12 +239,12 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(39, 228);
+            this.labelControl7.Location = new System.Drawing.Point(47, 231);
             this.labelControl7.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(80, 22);
+            this.labelControl7.Size = new System.Drawing.Size(72, 22);
             this.labelControl7.TabIndex = 46;
-            this.labelControl7.Text = "Fatura ID:";
+            this.labelControl7.Text = "Personel:";
             // 
             // TxtTutar
             // 
@@ -321,7 +337,7 @@
             this.TxtUrunID.Name = "TxtUrunID";
             this.TxtUrunID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtUrunID.Properties.Appearance.Options.UseFont = true;
-            this.TxtUrunID.Size = new System.Drawing.Size(298, 28);
+            this.TxtUrunID.Size = new System.Drawing.Size(165, 28);
             this.TxtUrunID.TabIndex = 35;
             // 
             // labelControl4
@@ -340,7 +356,7 @@
             this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKaydet.Appearance.Options.UseFont = true;
             this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(70, 296);
+            this.BtnKaydet.Location = new System.Drawing.Point(71, 367);
             this.BtnKaydet.Margin = new System.Windows.Forms.Padding(5);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(357, 43);
@@ -386,6 +402,45 @@
             this.groupControl4.Size = new System.Drawing.Size(475, 426);
             this.groupControl4.TabIndex = 9;
             this.groupControl4.Text = "groupControl4";
+            // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(68, 268);
+            this.BtnTemizle.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(357, 43);
+            this.BtnTemizle.TabIndex = 37;
+            this.BtnTemizle.Text = "TEMİZLE";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click_1);
+            // 
+            // BtnSil
+            // 
+            this.BtnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnSil.Appearance.Options.UseFont = true;
+            this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
+            this.BtnSil.Location = new System.Drawing.Point(68, 162);
+            this.BtnSil.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(357, 43);
+            this.BtnSil.TabIndex = 35;
+            this.BtnSil.Text = "SİL";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
+            // 
+            // BtnGuncelle
+            // 
+            this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGuncelle.Appearance.Options.UseFont = true;
+            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
+            this.BtnGuncelle.Location = new System.Drawing.Point(68, 215);
+            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(357, 43);
+            this.BtnGuncelle.TabIndex = 36;
+            this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // TxtTeslimAlan
             // 
@@ -458,17 +513,17 @@
             this.groupControl3.Controls.Add(this.labelControl14);
             this.groupControl3.Controls.Add(this.labelControl15);
             this.groupControl3.Controls.Add(this.labelControl16);
-            this.groupControl3.Location = new System.Drawing.Point(2, 146);
+            this.groupControl3.Location = new System.Drawing.Point(2, 179);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.ShowCaption = false;
-            this.groupControl3.Size = new System.Drawing.Size(475, 151);
+            this.groupControl3.Size = new System.Drawing.Size(475, 119);
             this.groupControl3.TabIndex = 8;
             this.groupControl3.Text = "groupControl3";
             // 
             // MskSaat
             // 
             this.MskSaat.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskSaat.Location = new System.Drawing.Point(142, 52);
+            this.MskSaat.Location = new System.Drawing.Point(142, 44);
             this.MskSaat.Mask = "00:00";
             this.MskSaat.Name = "MskSaat";
             this.MskSaat.Size = new System.Drawing.Size(299, 29);
@@ -478,7 +533,7 @@
             // MskTarih
             // 
             this.MskTarih.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskTarih.Location = new System.Drawing.Point(142, 14);
+            this.MskTarih.Location = new System.Drawing.Point(142, 6);
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
             this.MskTarih.Size = new System.Drawing.Size(299, 29);
@@ -487,7 +542,7 @@
             // 
             // TxtVergiDairesi
             // 
-            this.TxtVergiDairesi.Location = new System.Drawing.Point(142, 90);
+            this.TxtVergiDairesi.Location = new System.Drawing.Point(142, 82);
             this.TxtVergiDairesi.Margin = new System.Windows.Forms.Padding(5);
             this.TxtVergiDairesi.Name = "TxtVergiDairesi";
             this.TxtVergiDairesi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -499,7 +554,7 @@
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(41, 93);
+            this.labelControl14.Location = new System.Drawing.Point(41, 85);
             this.labelControl14.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(92, 22);
@@ -510,7 +565,7 @@
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Location = new System.Drawing.Point(93, 55);
+            this.labelControl15.Location = new System.Drawing.Point(93, 47);
             this.labelControl15.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(40, 22);
@@ -521,7 +576,7 @@
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Location = new System.Drawing.Point(87, 17);
+            this.labelControl16.Location = new System.Drawing.Point(87, 9);
             this.labelControl16.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(46, 22);
@@ -552,44 +607,84 @@
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
-            // BtnTemizle
+            // BtnBul
             // 
-            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnTemizle.Appearance.Options.UseFont = true;
-            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
-            this.BtnTemizle.Location = new System.Drawing.Point(68, 268);
-            this.BtnTemizle.Margin = new System.Windows.Forms.Padding(5);
-            this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(357, 43);
-            this.BtnTemizle.TabIndex = 37;
-            this.BtnTemizle.Text = "TEMİZLE";
-            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click_1);
+            this.BtnBul.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnBul.Appearance.Options.UseFont = true;
+            this.BtnBul.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnBul.Location = new System.Drawing.Point(304, 35);
+            this.BtnBul.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnBul.Name = "BtnBul";
+            this.BtnBul.Size = new System.Drawing.Size(123, 28);
+            this.BtnBul.TabIndex = 47;
+            this.BtnBul.Text = "Bul";
+            this.BtnBul.Click += new System.EventHandler(this.BtnBul_Click);
             // 
-            // BtnSil
+            // TxtPersonel
             // 
-            this.BtnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnSil.Appearance.Options.UseFont = true;
-            this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-            this.BtnSil.Location = new System.Drawing.Point(68, 162);
-            this.BtnSil.Margin = new System.Windows.Forms.Padding(5);
-            this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(357, 43);
-            this.BtnSil.TabIndex = 35;
-            this.BtnSil.Text = "SİL";
-            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
+            this.TxtPersonel.Location = new System.Drawing.Point(129, 225);
+            this.TxtPersonel.Margin = new System.Windows.Forms.Padding(5);
+            this.TxtPersonel.Name = "TxtPersonel";
+            this.TxtPersonel.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtPersonel.Properties.Appearance.Options.UseFont = true;
+            this.TxtPersonel.Size = new System.Drawing.Size(298, 28);
+            this.TxtPersonel.TabIndex = 48;
             // 
-            // BtnGuncelle
+            // labelControl8
             // 
-            this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnGuncelle.Appearance.Options.UseFont = true;
-            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(68, 215);
-            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(5);
-            this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(357, 43);
-            this.BtnGuncelle.TabIndex = 36;
-            this.BtnGuncelle.Text = "GÜNCELLE";
-            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Location = new System.Drawing.Point(39, 306);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(5);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(80, 22);
+            this.labelControl8.TabIndex = 49;
+            this.labelControl8.Text = "Fatura ID:";
+            // 
+            // TxtFirma
+            // 
+            this.TxtFirma.Location = new System.Drawing.Point(129, 263);
+            this.TxtFirma.Margin = new System.Windows.Forms.Padding(5);
+            this.TxtFirma.Name = "TxtFirma";
+            this.TxtFirma.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtFirma.Properties.Appearance.Options.UseFont = true;
+            this.TxtFirma.Size = new System.Drawing.Size(298, 28);
+            this.TxtFirma.TabIndex = 51;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Location = new System.Drawing.Point(70, 269);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(5);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(49, 22);
+            this.labelControl9.TabIndex = 50;
+            this.labelControl9.Text = "Firma:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Müşteri",
+            "Firma"});
+            this.comboBox1.Location = new System.Drawing.Point(143, 126);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(298, 30);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Location = new System.Drawing.Point(54, 129);
+            this.labelControl10.Margin = new System.Windows.Forms.Padding(5);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(79, 22);
+            this.labelControl10.TabIndex = 9;
+            this.labelControl10.Text = "Cari Türü:";
             // 
             // FrmFaturalar
             // 
@@ -632,6 +727,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtVergiDairesi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPersonel.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFirma.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -681,5 +778,12 @@
         private DevExpress.XtraEditors.SimpleButton BtnTemizle;
         private DevExpress.XtraEditors.SimpleButton BtnSil;
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
+        private DevExpress.XtraEditors.SimpleButton BtnBul;
+        private DevExpress.XtraEditors.TextEdit TxtPersonel;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.TextEdit TxtFirma;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
