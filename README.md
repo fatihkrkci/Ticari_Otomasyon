@@ -2,14 +2,19 @@
 Bu proje Murat Yücedağ tarafından Udemy'de verilen 'C# ile DevExpress'de SQL Tabanlı Ticari Otomasyon Geliştirin' eğitimi kapsamında geliştirilmiştir.
 
 # Projeye Genel Bakış
-Bu eğitimde DevExpress ile çok kapsamlı bir ticari otomasyon geliştirdik. Ticari otomasyonumuzun içerisinde stok takip, fatura, cari, raporlama, grafiksel analiz, satış hareketleri gibi birçok dinamik ve detaylı modüller bulunmaktadır. SQL tarafında kullandığımız sorgulara ise prosedür, join ve trigger örneklerini verebilirim.
+Bu eğitimde DevExpress ile çok kapsamlı bir ticari otomasyon geliştirdik. Ticari otomasyonumuzun içerisinde stok takip, fatura, cari, raporlama, grafiksel analiz, satış hareketleri gibi birçok dinamik ve detaylı modüller bulunmaktadır. Ayrıca ana sayfamızda XML aracılığıyla Haber Başlıkları'nı ve Anlık Döviz Kurları'nı gösterebiliyoruz. SQL tarafında kullandığımız sorgulara ise prosedür, join ve trigger örneklerini verebilirim.
 
 # Kullanılan Teknolojiler ve Yaklaşımlar
 ✔ C# / .NET
+<br>
 ✔ DevExpress
+<br>
 ✔ Microsoft SQL Server
+<br>
 ✔ İlişkisel Veri Tabanları
+<br>
 ✔ Raporlama, Grafiksel Analizler
+<br>
 ✔ Modüllere Ayrılmış Windows Form Uygulamaları
 
 
