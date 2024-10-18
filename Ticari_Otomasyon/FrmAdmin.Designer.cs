@@ -53,7 +53,7 @@
             // TxtKullaniciAdi
             // 
             this.TxtKullaniciAdi.Location = new System.Drawing.Point(309, 147);
-            this.TxtKullaniciAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtKullaniciAdi.Margin = new System.Windows.Forms.Padding(4);
             this.TxtKullaniciAdi.Name = "TxtKullaniciAdi";
             this.TxtKullaniciAdi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtKullaniciAdi.Properties.Appearance.Options.UseFont = true;
@@ -63,7 +63,7 @@
             // TxtSifre
             // 
             this.TxtSifre.Location = new System.Drawing.Point(309, 186);
-            this.TxtSifre.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TxtSifre.Margin = new System.Windows.Forms.Padding(5);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSifre.Properties.Appearance.Options.UseFont = true;
@@ -89,7 +89,7 @@
             this.BtnGirisYap.Appearance.Options.UseBackColor = true;
             this.BtnGirisYap.Appearance.Options.UseFont = true;
             this.BtnGirisYap.Location = new System.Drawing.Point(309, 238);
-            this.BtnGirisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnGirisYap.Margin = new System.Windows.Forms.Padding(4);
             this.BtnGirisYap.Name = "BtnGirisYap";
             this.BtnGirisYap.Size = new System.Drawing.Size(227, 53);
             this.BtnGirisYap.TabIndex = 4;
@@ -124,9 +124,10 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmAdmin";
+            this.Text = "Kullanıcı Girişi";
             ((System.ComponentModel.ISupportInitialize)(this.TxtKullaniciAdi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSifre.Properties)).EndInit();
             this.ResumeLayout(false);
